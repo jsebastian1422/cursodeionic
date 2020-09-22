@@ -1,0 +1,54 @@
+-- CMD
+cd [destino] ? Cambiamos de directorio
+
+cd ../ ? Regresamos un directorio atrás
+
+cd / ? Regresamos al inicio de nuestra ruta, al disco duro
+
+dir ? Muestra los directorios que hay en nuestra posición actual
+
+cls ? Limpiamos pantalla
+
+mkdir [nombre carpeta] ? Hacemos un directorio
+
+rmdir [nombre carpeta] ? Eliminamos un directorio (solo si esta vació)
+
+del [nombre archivo] ? Eliminamos un archivo
+
+D: o C: - Cambiar de directorio
+
+
+***************************************************************************************************************************************
+
+********************************************* Crear proyecto en iconic *********************************************
+ionic start myApp tabs
+-- Abir lab
+ionic serve --lab
+-- Arrancar servidor 
+ionic serve
+-- ReConstruir node 
+npm install
+
+********************************************* Crear Proyecto Angular *********************************************
+
+***** Crear proyecto base de angular *****
+ng new [nombreproyecto]
+
+***** Levantar el servidor de angular base *****
+ng serve -o
+
+********************************************* Componentes Angular *********************************************
+
+**** Crea componente y describe que realiza
+-- ng g c [ruta] --dry-run
+-- ng generate component xyz
+
+********************************************* Sistema de rutas *********************************************
+**** Crea el modulo y describe lo que realiza
+-- ng g m [NombreModulo] --dry-run
+**** Crea el modulo con rutas nuevas
+-- ng g m [NombreModulo]
+**** Crea el modulo dentro de las rutas del app
+-- ng g m [NombreModulo] --flat
+
+********************************************* Declaracion de rutas *********************************************
