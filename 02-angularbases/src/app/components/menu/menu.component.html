@@ -1,0 +1,19 @@
+
+<!-- <h4>Lista de menu con <strong>RouterLink</strong></h4>
+<ul class="list-group">
+    <a routerLink="/home" class="list-group-item">
+        Go home
+    </a>
+    <a routerLink="/about" class="list-group-item">
+        Go about
+    </a>
+    <a routerLink="/contact" class="list-group-item">
+        Go contact
+    </a>
+</ul>-->
+<h4>Lista de menu con <strong>MenuComponent</strong></h4>
+<ul class="list-group">
+    <a [routerLink]="ruta.path" class="list-group-item" *ngFor="let ruta of rutas">
+        {{ ruta.name}}
+    </a>
+</ul>

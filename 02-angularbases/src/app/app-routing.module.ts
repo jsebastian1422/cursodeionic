@@ -1,9 +1,10 @@
 import { NgModule } from '@angular/core';
-import { CommonModule } from '@angular/common';
+
 import {Routes, RouterModule} from '@angular/router'; // Importamos las rutas desde angualar
 import { HomeComponent } from './pages/home/home.component';
 import { AboutComponent } from './pages/about/about.component';
 import { ContactComponent } from './pages/contact/contact.component';
+import { EmailModule } from './pages/email/email.module';
 
 // Creacion de constante que almacena las rutas de la aplicacion especificando su paquete y componente
 const routes: Routes = [
@@ -18,6 +19,10 @@ const routes: Routes = [
   {
     path: 'contact',
     component: ContactComponent
+  },
+  {
+    path: 'email',
+    loadChildren: './pages/email/email.module#EmailModule'
   },
   { // En caso de que la ruta no existe redirecciona al home
     path: '**',
@@ -35,7 +40,7 @@ const routes: Routes = [
     RouterModule.forRoot(routes)
   ],
   // Exporta la configuracion del modulo
-  exports: [ 
+  exports: [
     RouterModule
   ]
 })

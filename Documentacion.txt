@@ -51,4 +51,16 @@ ng serve -o
 **** Crea el modulo dentro de las rutas del app
 -- ng g m [NombreModulo] --flat
 
-********************************************* Declaracion de rutas *********************************************
+********************************************* LazyLoad *********************************************
+**** Crea archivo con configuracion de rutas
+-- ng g m pages/posts --routing
+
+********************************************* Servicios Angular *********************************************
+**** Generar un servicio
+-- ng g s services/data --spec=false
+**** Imprimir la data
+-- import {tap} from 'rxjs/operators';
+-- return this.http.get('https://jsonplaceholder.typicode.com/posts')
+      .pipe( 
+        tap( console.log)
+      );

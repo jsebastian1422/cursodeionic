@@ -1,0 +1,15 @@
+<h1>Posteos</h1>
+
+<ul class="list-group">
+    <!-- Envia al mensajes al componente hijo -->
+    <app-mail *ngFor="let mensaje of mensajes | async"
+        [mensaje]="mensaje">
+    </app-mail>
+    
+    <!-- <li class="list-group-item" *ngFor="let mensaje of mensajes | async">
+        <h2>{{mensaje.title}}</h2>
+        <p class="text-justify">
+            {{mensaje.body}}
+        </p>
+    </li> -->
+</ul>
