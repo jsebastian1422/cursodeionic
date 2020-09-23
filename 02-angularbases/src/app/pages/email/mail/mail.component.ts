@@ -1,4 +1,4 @@
-import { Component, Input, OnInit } from '@angular/core';
+import { Component, Input, OnInit, Output, EventEmitter } from '@angular/core';
 
 @Component({
   selector: 'app-mail',
@@ -8,11 +8,16 @@ import { Component, Input, OnInit } from '@angular/core';
 export class MailComponent implements OnInit {
 
   //  Propiedad que se obtiene
-  @Input() mensaje;
-  
+  @Input() mensaje: any;
+  @Output() clickPost = new EventEmitter();
+
   constructor() { }
 
   ngOnInit(): void {
+  }
+
+  onClick() {
+    this.clickPost.emit(this.mensaje);
   }
 
 }

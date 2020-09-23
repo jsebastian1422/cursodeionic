@@ -3,7 +3,7 @@
 <ul class="list-group">
     <!-- Envia al mensajes al componente hijo -->
     <app-mail *ngFor="let mensaje of mensajes | async"
-        [mensaje]="mensaje">
+        [mensaje]="mensaje" (clickPost)="escuchaClick( $event )">
     </app-mail>
     
     <!-- <li class="list-group-item" *ngFor="let mensaje of mensajes | async">

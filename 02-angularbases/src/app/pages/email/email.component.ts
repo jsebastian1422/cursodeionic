@@ -20,4 +20,9 @@ export class EmailComponent implements OnInit {
       //});
   }
 
+  escuchaClick( event ) {
+    console.log('Click en:' , event);
+    
+  }
+
 }
