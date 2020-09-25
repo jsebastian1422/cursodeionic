@@ -18,6 +18,16 @@ export class InicioPage implements OnInit {
       icon: 'notifications-outline',
       text: 'Alert Page',
       redirectTo: '/alert'
+    },
+    {
+      icon: 'person-outline',
+      text: 'Avatar Page',
+      redirectTo: '/avatar'
+    },
+    {
+      icon: 'radio-button-on-outline',
+      text: 'Buttons Page',
+      redirectTo: '/buttons'
     }
   ];
   constructor() { }

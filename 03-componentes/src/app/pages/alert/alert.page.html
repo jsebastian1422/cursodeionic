@@ -1,7 +1,13 @@
-<app-header title="Alert Page"></app-header>
+<app-header [title]="message || 'Alert Page'"></app-header>
 
-<ion-content padding>
+<ion-content class="ion-padding">
   <ng-container>
-    <h1>Alert Page</h1>
+    <ion-button color="primary" expand="full" (click)="presentAlert()">
+      Show Alert
+    </ion-button>
+
+    <ion-button color="secondary" expand="full" (click)="presentAlertPrompt()">
+      Show Alert Form
+    </ion-button>
   </ng-container>
 </ion-content>

@@ -1,0 +1,51 @@
+<ion-header>
+  <ion-toolbar>
+    <ion-buttons slot="start">
+      <ion-back-button defaultHref="/" text="Atras"></ion-back-button>
+    </ion-buttons>
+
+    <ion-title>Buttons Page</ion-title>
+
+    <ion-buttons slot="end">
+      <ion-button color="primary">
+        <ion-icon name="baseball-outline"></ion-icon>
+      </ion-button>
+
+      <ion-button color="primary">
+        <ion-icon name="basketball-outline"></ion-icon>
+      </ion-button>
+    </ion-buttons>
+  </ion-toolbar>
+</ion-header>
+
+<ion-content class="ion-padding">
+
+  <!-- Default -->
+  <h5>Button Default</h5>
+  <ion-button>Default</ion-button>
+
+  <h5>Button Size</h5>
+  <ion-button size="large" color="primary">Large</ion-button>
+  <ion-button color="tertiary">Default</ion-button>
+  <ion-button size="small" color="success">Small</ion-button>
+
+  <h5>Button Anchor</h5>
+  <ion-button routerLink="/alert" expand="full">Alert Page</ion-button>
+  <ion-button routerLink="/action-sheet" color="warning" expand="full">Action-Sheet Page</ion-button>
+
+  <h5>Button ion-row + ion-col</h5>
+  <ion-row>
+    <ion-col>
+      <ion-button routerLink="/avatar" color="tertiary" expand="full">Avatar</ion-button>
+    </ion-col>
+    <ion-col>
+      <ion-button color="tertiary" expand="full">Default</ion-button>
+    </ion-col>
+  </ion-row>
+
+  <h5>Button fill outline</h5>
+  <ion-button expand="full" fill="outline">Outline + Full</ion-button>
+  <ion-button expand="block" fill="outline">Outline + Block</ion-button>
+  <ion-button shape="round" fill="outline">Outline + Round</ion-button>
+  
+</ion-content>
