@@ -13,8 +13,22 @@ export class DateTimePage implements OnInit {
   constructor() { }
 
   ngOnInit() {
+    this.customPickerOptions = {
+      buttons: [{
+        text: 'Save',
+        handler: (event) => {
+          console.log('Clicked Save!');
+          console.log(event);
+        }
+      }, {
+        text: 'Log',
+        handler: () => {
+          console.log('Clicked Log. Do not Dismiss.');
+          return false;
+        }
+      }]
+    };
   }
-
   changeDte(event: any){
     console.log('ionChange', event.detail.value);
   }
